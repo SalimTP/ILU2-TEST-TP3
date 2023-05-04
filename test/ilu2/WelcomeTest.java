@@ -14,4 +14,10 @@ class WelcomeTest {
 	}
 	
 
+	@Test
+	void test_ITER_2() {
+		assertEquals("Hello, my friend", Welcome.welcome(""));
+		assertEquals("Hello, my friend", Welcome.welcome(null));
+		assertEquals("Hello, my friend", Welcome.welcome("   "));
+	}
 }

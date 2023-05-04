@@ -4,6 +4,10 @@ public class Welcome {
 	public static String welcome(String input) {
 		StringBuilder chaine = new StringBuilder("Hello, ");
 		
+		if(input == null || input.trim().equals("")) {
+			return chaine.append("my friend").toString();
+		}
+		
 		chaine.append(majusculePremiereLettre(input));
         return chaine.toString();
 	}
