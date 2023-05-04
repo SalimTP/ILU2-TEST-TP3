@@ -20,4 +20,10 @@ class WelcomeTest {
 		assertEquals("Hello, my friend", Welcome.welcome(null));
 		assertEquals("Hello, my friend", Welcome.welcome("   "));
 	}
+	
+	@Test
+	void test_ITER_3() {
+		assertEquals("HELLO, JULIEN !", Welcome.welcome("JULIEN"));
+		assertEquals("HELLO, BOB !", Welcome.welcome("BOB"));
+	}
 }

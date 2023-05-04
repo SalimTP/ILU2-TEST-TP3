@@ -1,13 +1,17 @@
 package ilu2;
-
 public class Welcome {
 	public static String welcome(String input) {
 		StringBuilder chaine = new StringBuilder("Hello, ");
-		
-		if(input == null || input.trim().equals("")) {
+
+		if(input == null || input.trim().equals("")) 
 			return chaine.append("my friend").toString();
-		}
 		
+		
+		if (input.toUpperCase().equals(input)) {
+			chaine.append(input);
+			return chaine.append(" !").toString().toUpperCase(); 
+		}
+
 		chaine.append(majusculePremiereLettre(input));
         return chaine.toString();
 	}
