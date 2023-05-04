@@ -7,8 +7,11 @@ import org.junit.jupiter.api.Test;
 class WelcomeTest {
 
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	void test_ITER_1() {
+		assertEquals("Hello, Bob", Welcome.welcome("bob"));
+		assertEquals("Hello, Java", Welcome.welcome("java"));
+		assertEquals("Hello, Anthoine", Welcome.welcome("Anthoine"));
 	}
+	
 
 }
