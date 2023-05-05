@@ -38,4 +38,10 @@ class WelcomeTest {
 		assertEquals("Hello, Adrien, Boudrier, Alex", Welcome.welcome("Adrien, boudrier, Alex"));
 	}
 	
+	@Test
+	void test_ITER_6() {
+		assertEquals("Hello, Amy, Jerry. AND HELLO, BOB !", Welcome.welcome("Amy, BOB, Jerry"));
+		assertEquals("Hello, Adrien, Boudrier. AND HELLO, ALEX !", Welcome.welcome("Adrien, boudrier, ALEX"));
+		assertEquals("Hello, Adrien, Boudrier, Clara, Arley. AND HELLO, ALEX, RONE, MARCEL !", Welcome.welcome("Adrien, boudrier, ALEX, RONE, Clara,Arley,MARCEL"));
+	}
 }
