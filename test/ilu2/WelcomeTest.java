@@ -11,8 +11,7 @@ class WelcomeTest {
 		assertEquals("Hello, Bob", Welcome.welcome("bob"));
 		assertEquals("Hello, Java", Welcome.welcome("java"));
 		assertEquals("Hello, Anthoine", Welcome.welcome("Anthoine"));
-	}
-	
+	}	
 
 	@Test
 	void test_ITER_2() {
@@ -32,4 +31,11 @@ class WelcomeTest {
 		assertEquals("Hello, Amy, Bob", Welcome.welcome("amy,bob"));
 		assertEquals("Hello, Adrien, Boudrier", Welcome.welcome("Adrien,boudrier"));
 	}
+	
+	@Test
+	void test_ITER_5() {
+		assertEquals("Hello, Amy, Bob, John", Welcome.welcome("Amy,bob, john"));
+		assertEquals("Hello, Adrien, Boudrier, Alex", Welcome.welcome("Adrien, boudrier, Alex"));
+	}
+	
 }
